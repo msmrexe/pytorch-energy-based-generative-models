@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Data
+data/
+
+# Checkpoints and Logs
+checkpoints/
+*.pth
+*.pt
+*.log
+*.swp
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+
+# Build and Dist
+build/
+dist/
+*.egg-info/
+
+# Figures
+figures/
