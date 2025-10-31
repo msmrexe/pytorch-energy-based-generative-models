@@ -47,7 +47,7 @@ def langevin_dynamics_step(model: nn.Module, x: torch.Tensor, alpha: float, sigm
     epsilon = torch.randn_like(x) # Sample Gaussian noise
 
     # Langevin update rule
-    x_new = x + (alpha * grad) + (sigma * epsilon)
+    x_new = x - (alpha * grad) + (sigma * epsilon)
     return x_new
 
 def sample(model: nn.Module, eta: int, alpha: float, sigma: float,
